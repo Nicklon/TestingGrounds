@@ -14,5 +14,8 @@ UPatrolRoute::UPatrolRoute()
 }
 
 TArray<AActor*> UPatrolRoute::GetPatrolPoints() {
+	if (PatrolPointsCPP.Num()<3) {
+		return TArray<AActor*>();
+	}
 	return PatrolPointsCPP;
 }

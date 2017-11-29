@@ -22,7 +22,4 @@ protected:
 
 public:	
 	TArray<AActor*> GetPatrolPoints();
-
-		
-	
 };
